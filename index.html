@@ -9,6 +9,7 @@
 -->
     <link rel="stylesheet" type="text/css" href="./bs-5.3.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         .back-img {
             background-image: url(./src/coffee2.jpg);
@@ -41,14 +42,36 @@
                 </button>
                 <div class="collapse navbar-collapse align-center" id="main-nav">
                     <ul class="navbar-nav">
+                        <li class="nav-item dropdown" data-bs-theme="dark">
+                            <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="language-menu">
+                                <span>Language</span>
+                            </a>
+                            <ul class="dropdown-menu rounded-0 bg-black" aria-labelledby="language-menu">
+                                <li><button class="dropdown-item" type="button">English</button></li>
+                                <li><button class="dropdown-item" type="button">Filipino</button></li>
+                                <li><button class="dropdown-item" type="button">Espanol</button></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-none d-md-block ms-4 text-white">
+                        </li>
                         <li class="nav-item">
-                            <a href="#language" class="nav-link text-white">Language</a>
+                            <hr class="white-bk">
                         </li>
                         <li class="nav-item">
                             <a href="#careers" class="nav-link text-white">Careers</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#menu" class="nav-link text-white">Our Menu</a>
+                        <li class="nav-item dropdown " data-bs-theme="dark">
+                            <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                id="menu-menu">
+                                <span> Our Menu</span>
+                            </a>
+                            <ul class="dropdown-menu rounded-0 bg-black dropdown-menu-right w-auto shadow "
+                                aria-labelledby="menu-menu">
+                                <li><button class="dropdown-item" type="button">Drinks</button></li>
+                                <li><button class="dropdown-item" type="button">Food</button></li>
+                                <li><button class="dropdown-item" type="button">Extras</button></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a href="#delivery" class="nav-link text-white">Delivery</a>
@@ -63,8 +86,25 @@
         </nav>
     </div>
     <!-- body -->
-    <section class="d-flex align-items-center " id="intro">
-        <img src="./src/coffee1.jpg" alt="coffee" class="h-50 back-class ">
+    <!-- main image & intro text -->
+    <section id="intro" class=".into">
+        <div class="container-lg mt-5">
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h1 class="text-white">Awakens Your OneSenses One at a Time</h1>
+                    <span class="text-white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nemo qui id vitae harum.
+                    </span>
+                </div>
+                <div class="col-md-4 text-center d-none d-md-block">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--<section class="container-lg d-flex align-items-center " id="intro">
+        <img src="./src/coffee1.jpg" alt="coffee" class="back-class ">
         <div class="row justify-content-center text-md-start">
             <div class="col-md-6 h-75 container align-items-center mt-5 ">
                 <h1 class="text-white">Awakens Your OneSenses One at a Time</h1>
@@ -73,10 +113,10 @@
                 </span>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- This section is for products -->
-     <section id="quick-prod" class="bg-light mt-5">
+    <section id="quick-prod" class="bg-light mt-5">
         <div class="container-lg">
             <div class="text-center">
                 <h2>Products</h2>
@@ -92,11 +132,12 @@
                 </div>
             </div>
         </div>
-     </section>
+    </section>
 
     <!-- This section is for Reviews-->
 
     <!-- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="./bs-5.3.3/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
