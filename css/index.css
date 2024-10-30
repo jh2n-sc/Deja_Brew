@@ -1,5 +1,6 @@
 #intro {
     position: relative;
+    background-color: rgb(17, 17, 17);
     /* Allows absolute positioning of the overlay */
     background-image: url("../src/coffee1.jpg");
     /* Path to your image */
