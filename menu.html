@@ -1,0 +1,330 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DejaBrew Coffee</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+-->
+    <link rel="stylesheet" type="text/css" href="./bs-5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .back-img {
+            background-image: url(./src/coffee2.jpg);
+        }
+
+        .logo-img {
+            width: 5;
+        }
+
+        .icon-size {
+            height: 8em;
+        }
+
+        .no-h {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- This section is for navigation-->
+
+    <!-- This section is for body -->
+    <!-- this is for the responsive background  mage-->
+    <div>
+        <nav class="bg-black navbar navbar-expand-md navbar-dark">
+            <div class="container-xxl">
+                <a href="./index.html" class="navbar-brand" alt="brand">
+                    <!-- <img src="./src/brand.svg" alt="DejaBrew_Logo" class="brand logo-img"> -->
+                    <img class="nav-brand" src="./src/logo-white.svg" alt="logo">
+                </a>
+                <div class="navbar d-sm-block d-md-none d-lg-none me-2 ms-auto ">
+                    <a href="#order" class="btn btn-secondary">Order Now</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-center" id="main-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown" data-bs-theme="dark">
+                            <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="language-menu">
+                                <span>Language</span>
+                            </a>
+                            <ul class="dropdown-menu rounded-0 bg-black" aria-labelledby="language-menu">
+                                <li><button class="dropdown-item" type="button">English</button></li>
+                                <li><button class="dropdown-item" type="button">Filipino</button></li>
+                                <li><button class="dropdown-item" type="button">Espanol</button></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-none d-md-block ms-4 text-white">
+                        </li>
+                        <li class="nav-item">
+                            <hr class="white-bk">
+                        </li>
+                        <li class="nav-item">
+                            <a href="#careers" class="nav-link text-white">Careers</a>
+                        </li>
+                        <li class="nav-item dropdown " data-bs-theme="dark">
+                            <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="menu-menu">
+                                <span> Our Menu</span>
+                            </a>
+                            <ul class="dropdown-menu rounded-0 bg-black dropdown-menu-right w-auto shadow "
+                                aria-labelledby="menu-menu">
+                                <li><a class="dropdown-item" href="drinks.html">Drinks</a></li>
+                                <li><a class="dropdown-item" href="food.html">Food</a></li>
+                                <li><a class="dropdown-item" href="extras.html">Extras</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#delivery" class="nav-link text-white">Delivery</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="navbar d-none d-md-block">
+                    <a href="#order" class="btn btn-secondary">Order Now</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- body -->
+    <section class="container-lg mt-5 d-none d-lg-block">
+        <div class="container text-center">
+            <div class="row align-items-start">
+                <div class="col-4">
+                    <div class="border border-2 mb-4" id="drinks">
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/drinks/espresso.png"
+                                        alt="coffee">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Coffees</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/drinks/iced-coffee-black.png"
+                                        alt="iced-coffee">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Iced Coffees</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/drinks/rainbow-float.png"
+                                        alt="other-drinks">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Other Drinks</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="border border-2 mb-4" id="foods">
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/food/dark-forest-cake.png"
+                                        alt="cake">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Cakes</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/food/strawberry-pastry-jam.png"
+                                        alt="pastry">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Pastries</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/food/overload-donut.png"
+                                        alt="donut">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Donuts</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="border border-2 mb-4" id="others">
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/others/mug.png"
+                                        alt="tshirt">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Other Merchandize</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- section for hot coffee-->
+        <!--
+                    <div class="border border-2 mb-4">
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/drinks/cappuccino.png" alt="cappuccino">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Cappuccino</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/drinks/espresso.png" alt="espresso">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Espresso</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Section for cool coffee--
+
+                    <div class="border border-2 mb-4">
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/drinks/coffee-milkshake.png"
+                                        alt="coffee-milkshake">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Coffee Milkshake</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/drinks/iced-coffee-black.png"
+                                        alt="iced-coffee-black">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Iced Black Coffee</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/drinks/iced-coffee-milk.png"
+                                        alt="iced-coffee-milk">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Iced Milk Coffee</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- section for other no caffeine drinks--
+
+                    <div class="border border-2 mb-4">
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/drinks/cherry-bomb.png"
+                                        alt="cherry-bomb">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Cherry Bomb</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/drinks/coke-float.png"
+                                        alt="coke-float">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Coke Float</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/drinks/rainbow-float.png"
+                                        alt="rainbow-float">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Rainbow Float</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="no-h text-black">
+                            <div class="row align-items-center">
+                                <div class="col-2 ">
+                                    <img class="icon-size" src="./src/drinks/orange-juice.png"
+                                        alt="orange-juice">
+                                </div>
+                                <div class="col-7">
+                                    <p class="ms-5 text-wrap fs-4">Orange Juice</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+
+                </div>
+                <div class="col-8">
+                    One of three columns
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main image & intro text -->
+
+    <!--<section class="container-lg d-flex align-items-center " id="intro">
+        <img src="./src/coffee1.jpg" alt="coffee" class="back-class ">
+        <div class="row justify-content-center text-md-start">
+            <div class="col-md-6 h-75 container align-items-center mt-5 ">
+                <h1 class="text-white">Awakens Your OneSenses One at a Time</h1>
+                <span class="text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nemo qui id vitae harum.
+                </span>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- This section is for products -->
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./bs-5.3.3/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+-->
+</body>
+
+</html>
