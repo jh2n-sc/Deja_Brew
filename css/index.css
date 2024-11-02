@@ -56,3 +56,34 @@
 .nav-brand {
     height: 4em;
 }
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.no-h {
+    text-decoration: none;
+}
+.logo-img {
+    width: 5;
+}
+.bo1x {
+    background: #fff;
+    border-radius: 4px;
+    padding-bottom: 100%;
+ }
+.i-big {
+    font-size: 2em;
+}
+.gi-img-size{
+    height: 5em;
+}
+.tired-of-this-padding {
+    padding-left: 5.75px;
+    padding-right: 5.75px;
+}
+.tiny-size {
+    height: 2em;
+}
+.tiny-font-size {
+    font-size: 0.9em;
+}
