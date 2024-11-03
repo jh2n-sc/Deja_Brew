@@ -85,5 +85,15 @@ ul {
     height: 2em;
 }
 .tiny-font-size {
-    font-size: 0.9em;
+    font-size: 0.7em;
+}
+.fs-6 {
+    font-size: 0.7em !important;
+}
+.space-begone {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.teaser-cards-sub {
+    font-size: .999em;
 }
