@@ -1,0 +1,471 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DejaBrew Coffee</title>
+    <link rel="stylesheet" type="text/css" href="./bs-5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .back-img {
+            background-image: url(./src/coffee2.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- This section is for navigation-->
+    <div>
+        <nav class="bg-black navbar navbar-expand-md navbar-dark">
+            <div class="container-xxl">
+                <a href="./index.html" class="navbar-brand" alt="brand">
+                    <!-- <img src="./src/brand.svg" alt="DejaBrew_Logo" class="brand logo-img"> -->
+                    <img class="nav-brand" src="./src/logo-white.svg" alt="logo">
+                </a>
+                <div class="navbar d-sm-block d-md-none d-lg-none me-2 ms-auto ">
+                    <a href="#order" class="btn btn-secondary">Order Now</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-center" id="main-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown" data-bs-theme="dark">
+                            <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="language-menu">
+                                <span>Language</span>
+                            </a>
+                            <ul class="dropdown-menu rounded-0 bg-black" aria-labelledby="language-menu">
+                                <li><button class="dropdown-item" type="button">English</button></li>
+                                <li><button class="dropdown-item" type="button">Filipino</button></li>
+                                <li><button class="dropdown-item" type="button">Espanol</button></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-none d-md-block ms-4 text-white">
+                        </li>
+                        <li class="nav-item">
+                            <hr class="white-bk">
+                        </li>
+                        <li class="nav-item">
+                            <a href="#careers" class="nav-link text-white">Careers</a>
+                        </li>
+                        <li class="nav-item dropdown " data-bs-theme="dark">
+                            <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="menu-menu">
+                                <span> Our Menu</span>
+                            </a>
+                            <ul class="dropdown-menu rounded-0 bg-black dropdown-menu-right w-auto shadow "
+                                aria-labelledby="menu-menu">
+                                <li><a class="dropdown-item" href="./collapsed-menu.html#drinks">Drinks</a></li>
+                                <li><a class="dropdown-item" href="./collapsed-menu.html#foods">Food</a></li>
+                                <li><a class="dropdown-item" href="./collapsed-menu.html#others">Extras</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./delivery.html" class="nav-link text-white">Delivery</a> 
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="navbar d-none d-md-block">
+                    <button type="button" class="btn btn-primary mt-3 rounded-1" data-bs-toggle="modal"
+                        data-bs-target="#order-modal">
+                        <span class="text-white">Order Now</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Modal Itself -->
+    <div class="modal fade" id="order-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Place Order</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" type="button" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Thank you for choosing DejaBrew Coffee Shop
+                    </p>
+                    <label for="modal-name-order" class="for-label pt-4">Your Name</label>
+                    <input type="text" id="modal-name-order" class="form-control" placeholder="Juan Dela Cruz">
+                    <label for="modal-email-order" class="for-label pt-4">Your Email Address</label>
+                    <input type="text" id="modal-email-order" class="form-control" placeholder="hello@example.com">
+                    <label for="modal-cart-order" class="for-label pt-4">Enter Items You Want To Buy</label>
+                    <input type="text" id="modal-cart-order" class="form-control" placeholder="Mug x2">
+                    <label for="modal-address-order" class="for-label pt-4">Your Address</label>
+                    <input type="text" id="modal-addres-order" class="form-control"
+                        placeholder="1234 brgy.12, Legazpi City, Albay">
+                    <label for="modal-mobilenum-order" class="for-label pt-4">Your Mobile Number</label>
+                    <input type="text" id="modal-mobilenum-order" class="form-control" placeholder="0999-999-999">
+                    <label for="modal-modepay-order" class="for-label pt-4">Mode of Payment</label>
+                    <br>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio1">Card</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio2">Cash</label>
+
+
+                    </div>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" type="button"><span class="text-white">
+                            Place Order</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- body -->
+    <!-- main image & intro text -->
+    <section class="container-lg mt-5">
+        <div>
+            <img src="./src/mockups/delivery.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="mt-5">
+            <div class="pb-4 pt-5">
+                <span class="text-start fs-3 fw-bold">Delivery</span>
+            </div>
+            <span>
+                At DejaBrew, we believe that your favorite coffee should be accessible wherever you are. That’s why we
+                offer convenient delivery options to bring our delicious brews right to your doorstep. Whether you're
+                working from home, relaxing on the weekend, or just craving that perfect cup, our team is ready to
+                deliver your favorites with care. Enjoy our signature drinks, fresh pastries, and delightful snacks, all
+                made with the same passion and quality you’d find in our shop. With just a few clicks, you can indulge
+                in the DejaBrew experience from the comfort of your own space—because great coffee should always be
+                within reach!</span>
+        </div>
+    </section>
+
+    <!--Cards-->
+    <section class="pt-4 pb-4 mt-5 " id="buy-standard">
+        <div class="container-fluid">
+            <div class="row my-5  justify-content-center g-4">
+                <div class="col-8 col-lg-3 col-xl-3">
+                    <div class="card border-gray border-1 rounded-0 h-100">
+                        <img src="./src/mockups/mockup-cup-coffee.png" alt="star-crochet-bag"
+                            class="rounded img-fluid space-begone mt-3 rounded-0 ">
+                        <div class="card-body text-start py-4 h-25">
+                            <h4 class="card-title fs-5 fw-bold">Looking for jobs?</h4>
+                            <p class="lead card-subtitle teaser-cards-sub">Would you like to work in DejaBrew Coffee
+                                Shop? You can apply now and get started.</p>
+                            <button class="btn btn-primary mt-3 rounded-1">Apply for a job </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-3 col-xl-3">
+                    <div class="card border-gray border-1 rounded-0 h-100">
+                        <img src="./src/mockups/mockup-girl-shirt.png" alt="star-crochet-bag"
+                            class="rounded img-fluid space-begone mt-3 rounded-0 ">
+                        <div class="card-body text-start py-4 h-25">
+                            <h4 class="card-title fs-5 fw-bold">DejaBrew Shirt Available Now!</h4>
+                            <p class="lead card-subtitle teaser-cards-sub">New merchandize is out! Get yours today!</p>
+                            <button class="btn btn-primary mt-3 rounded-1">Buy The Shirt</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-3 col-xl-3">
+                    <div class="card border-gray border-1 rounded-0 h-100">
+                        <img src="./src/mockups/mockup-laptop-site.png" alt="star-crochet-bag"
+                            class="rounded img-fluid space-begone mt-3 rounded-0 ">
+                        <div class="card-body text-start py-4 h-25">
+                            <h4 class="card-title fs-5 fw-bold">Join Our Email List</h4>
+                            <p class="lead card-subtitle teaser-cards-sub">Get news, promotions and more delivered
+                                right to your inbox</p>
+                            <button type="button" class="btn btn-primary mt-3 rounded-1" data-bs-toggle="modal"
+                                data-bs-target="#reg-modal">
+                                <span class="text-white">Register for Updates</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal-->
+
+            <!-- Modal Itself -->
+            <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
+                            <button class="btn-close" data-bs-dismiss="modal" type="button" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Want to be the first to know about our latest brews, special offers, and upcoming
+                                events? Join our coffee-loving community!
+                            </p>
+                            <label for="modal-email" class="for-label">Your Email Address</label>
+                            <input type="text" id="modal-email" class="form-control" placeholder="hello@example.com">
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" type="button"><span class="text-white">
+                                    Submit</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- penultimate footer-->
+    <section class="container-xl justify-content-center align-items-center mt-5">
+        <div class="container-sm d-none d-lg-block align-items-center p-4">
+            <div class="px-5 row justify-content-center">
+                <div class="col">
+                    <span class="fw-bold">About Us</span>
+                    <ul class="mt-3">
+                        <li class="mt-1"><a class="no-h text-muted" href="./about-us.html"><span>About Us Overview</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Leadership Team</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Location</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Franchising</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Real Estate</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Values In Action</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>News &amp; Notifications</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <span class="fw-bold">Services</span>
+                    <ul class="mt-3">
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Services Overview</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Delivery Partners</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Wi-Fi</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Trending Now</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Mobile Order &amp; pay</span></a>
+                        </li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>DejaBrew's Rewards</span></a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <span class="fw-bold">Community</span>
+                    <ul class="mt-3">
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Community Overview</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Now Serving</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Scholarship Overview</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Recycling Efforts</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>No Poverty</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>DejaBrew's LGBTQ+</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>DejaBrew's International</span></a>
+                        </li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Black Lives Matter</span></a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <span class="fw-bold">Contact Us</span>
+                    <ul class="mt-3">
+                        <li class="mt-1"><a class="no-h text-muted" href="./contact-us.html"><span>Contact Us Overview</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Donations</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Employment</span></a></li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Frequently Asked Questions</span></a>
+                        </li>
+                        <li class="mt-1"><a class="no-h text-muted" href="#"><span>Customer Feedback</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="d-md-block d-lg-none">
+            <div class="accordion accordion-flush" id="accordionFlushFooter">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseAboutUs" aria-expanded="false"
+                            aria-controls="flush-collapseAboutUs">
+                            About Us
+                        </button>
+                    </h2>
+                    <div id="flush-collapseAboutUs" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushFooter">
+                        <div class="accordion-body">
+                            <ul>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>About Us Overview</span></a>
+                                </li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Leadership Team</span></a>
+                                </li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Location</span></a></li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Franchising</span></a></li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Real Estate</span></a></li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Values In Action</span></a>
+                                </li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>News &amp;
+                                            Notifications</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseServices" aria-expanded="false"
+                            aria-controls="flush-collapseServices">
+                            Services
+                        </button>
+                    </h2>
+                    <div id="flush-collapseServices" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushFooter">
+                        <div class="accordion-body">
+                            <ul>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Services Overview</span></a>
+                                </li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Delivery Partners</span></a>
+                                </li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Wi-Fi</span></a></li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Trending Now</span></a></li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Mobile Order &amp;
+                                            pay</span></a>
+                                </li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>DejaBrew's Rewards</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseCommunity" aria-expanded="false"
+                            aria-controls="flush-collapseCommunity">
+                            Community
+                        </button>
+                    </h2>
+                    <div id="flush-collapseCommunity" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushFooter">
+                        <div class="accordion-body">
+                            <ul>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Community Overview</span></a>
+                                </li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Now Serving</span></a></li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Scholarship
+                                            Overview</span></a></li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Recycling Efforts</span></a>
+                                </li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>No Poverty</span></a></li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>DejaBrew's LGBTQ+</span></a>
+                                </li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>DejaBrew's
+                                            International</span></a>
+                                </li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Black Lives Matter</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseContactUs" aria-expanded="false"
+                            aria-controls="flush-collapseContactUs">
+                            Contact Us
+                        </button>
+                    </h2>
+                    <div id="flush-collapseContactUs" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushFooter">
+                        <div class="accordion-body">
+                            <ul class="mt-3">
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Contact Us
+                                            Overview</span></a></li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Donations</span></a></li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Employment</span></a></li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Frequently Asked
+                                            Questions</span></a>
+                                </li>
+                                <li class="mt-1"><a class="no-h text-muted" href="#"><span>Customer Feedback</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- socials footer-->
+    <section class="container-xxl mt-5 px-5">
+        <div class="row justify-content-center align-items-center px-1">
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="d-flex flex-nowrap justify-content-evenly">
+                    <a href="#" class="no-h text-black"><i
+                            class="border border-2 border-black tired-of-this-padding rounded-pill bi i-big bi-facebook"></i></a>
+                    <a href="#" class="no-h text-black">
+                        <i
+                            class="border border-2 border-black tired-of-this-padding rounded-pill bi i-big bi-twitter-x"></i>
+                    </a>
+                    <a href="#" class="no-h text-black">
+                        <i
+                            class="border border-2 border-black tired-of-this-padding rounded-pill bi i-big bi-youtube"></i>
+                    </a>
+                    <a href="#" class="no-h text-black"> <i
+                            class="border border-2 border-black tired-of-this-padding rounded-pill bi i-big bi-instagram"></i></a>
+                    <a href="#" class="no-h text-black"><i
+                            class="border border-2 border-black tired-of-this-padding rounded-pill bi i-big bi-spotify"></i></a>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 col-sm-5 justify-content-center">
+                <img src="./src/gi-google-play.png" alt="gi-google-play" class="gi-img-size">
+            </div>
+            <div class="col-md-4 col-lg-3 col-sm-5 justify-content-center">
+                <img src="./src/gi-app-store.png" alt="gi-app-store" class="gi-img-size">
+            </div>
+        </div>
+    </section>
+    <!-- horizontal line break-->
+    <div class="container-lg px-5">
+        <hr>
+    </div>
+
+    <!--The actual footer-->
+    <section class="container-lg px-5">
+        <div class="d-flex flex-wrap justify-content-center">
+            <div class="mx-4 my-2">
+                <a href="#" class="no-h"><span class="fs-6 text-black">Privacy (Updated)</span></a>
+            </div>
+            <div class="mx-4 my-2">
+                <a href="#" class="no-h"><span class="fs-6 text-black">Philippines Privacy Notice</span></a>
+            </div>
+            <div class="mx-4 my-2">
+                <a href="#" class="no-h"><span class="fs-6 text-black">Bicol University College of Science</span></a>
+            </div>
+            <div class="mx-4 my-2">
+                <a href="#" class="no-h"><span class="fs-6 text-black">Consumer Health Data</span></a>
+            </div>
+            <div class="mx-4 my-2">
+                <a href="#" class="no-h"><span class="fs-6 text-black">Accesibility</span></a>
+            </div>
+            <div class="mx-4 my-2">
+                <a href="#" class="no-h"><img class="tiny-size mx-5" src="./src/logo-black.svg" alt=""></a>
+                <span class="fs-6 mx-5 text-end">© 2024 DejaBrew's. All Rights Reserved</span>
+            </div>
+            <div class="mx-4 my-2">
+                <a href="#" class="no-h"><span class="fs-6 text-black">Terms &amp; Conditions</span></a>
+            </div>
+            <div class="mx-4 my-2">
+                <a href="#" class="no-h"><span class="fs-6 text-black">Do Not Sell My Personal Information</span></a>
+            </div>
+            <div class="mx-4 my-2">
+                <a href="#" class="no-h"><span class="fs-6 text-black">Cookie Settings</span></a>
+            </div>
+
+
+
+        </div>
+    </section>
+    <!-- spacing #should be in-->
+    <div class="container-xxl">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <!-- scripts -->
+    <script type="text/javascript" src="./bs-5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
